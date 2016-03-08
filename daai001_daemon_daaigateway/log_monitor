@@ -1,0 +1,26 @@
+Send AT command!!
+cmd Ok
+3G module ok !!
+READ AT_COPS !!
+in get_sim5215_op cmd out:AT+COPS?
+--
+in get_sim5215_op cmd in #50 bytes:AT+COPS?
++COPS: 0,0,"Chunghwa Telecom",2
+
+OK
+--
+op cmd, We get #15 bytes, string=hunghwa Telecom
+READ AT_CCID !!
+ccid cmd, We get #20 bytes, string=89886920031021102528
+READ AT_CSQ !!
+rssi cmd, We get #2 bytes, string=12
+rtnMAC=54:4a:16:c0:1e:15
+
+i=2
+i=5
+i=8
+i=11
+i=14
+modified rtnMAC=54-4a-16-c0-1e-15
+
+[DEBUG: OSUtils_mkdir:375] Command = mkdir -p temp, result = 1
